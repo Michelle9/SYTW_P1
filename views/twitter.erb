@@ -90,8 +90,8 @@
 			<%end %>
 
 			<% if @name != ''%>
-				<%if @number>6%>
-					<p id="warning"> Sólo se puede mostrar 6 amigos </p>
+				<%if @number>10%>
+					<p id="warning"> Sólo se puede mostrar 10 amigos </p>
 				<%elsif @seguidores.length < @number %>
 					<p id="warning">El usuario sólo tiene <%= @seguidores.length%> amigos. </p>
 					<p> Amigos más populares </p>
