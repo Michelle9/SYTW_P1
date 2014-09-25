@@ -1,6 +1,6 @@
 ### Sistemas y Tecnologías Web:
 ## Práctica: Aplicación Web con Sinatra: Contar la Popularidad de Nuestros Amigos en Twitter
-## Jhoanmary Pérez Fariña
+
 =========
 
 Aaplicación web en Sinatra, que una vez obtenido el nombre del usuario muestra
@@ -22,3 +22,7 @@ Podemos ejecutarlo de dos formas:
 
 1. `ruby twitter.rb`
 2. Iremos a [http://localhost:4567/](http://localhost:9393/) para poder usar la aplicación
+
+------------
+
+## Jhoanmary Pérez Fariña
