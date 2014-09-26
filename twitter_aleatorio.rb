@@ -18,10 +18,9 @@ post '/' do
   @number = params[:n].to_i
   @number = 10 if @number > 10
   if client.user? @name 
-    amigos = client.friends(@name,{})
+    amigos = client.friends(@name).take(@number)
     amigos = amigos.map { |i| [i.name, i.followers_count]}
-    amigos = amigos.sort_by { | x,y | -y}
-    @seguidores = amigos.take(@number)
+    @seguidores = amigos.sort_by { | x,y | -y}
   end      
   erb :twitter
 end
